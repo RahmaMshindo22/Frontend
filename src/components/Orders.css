@@ -1,0 +1,67 @@
+.orders-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-container header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.orders-container main {
+  display: grid;
+  gap: 20px;
+}
+
+.order-section, .payment-section, .delivery-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.order-section h2, .payment-section h2, .delivery-section h2 {
+  margin-bottom: 10px;
+  color: #007bff; /* Blue header */
+}
+
+.order-section form, .payment-section form, .delivery-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-section label, .payment-section label {
+  font-weight: bold;
+}
+
+.order-section select, .order-section input[type="number"], .payment-section input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.order-section .btn, .payment-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.order-section .btn:hover, .payment-section button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.response-container {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
